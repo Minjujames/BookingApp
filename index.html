@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Desktop App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <header>
+ 
+  </header>
+  <body>
+    <main>
+     <form name="cForm" onsubmit="return validateFormFieldInput()" action="/" method="POST">
+      <h2>BOOK YOUR TICKETS</h2>
+      <section class="fields">
+       
+        <div class="form-inline">
+          <label><input type="radio" name="tripDetails" value="one" />Oneway</label>
+          <label
+            ><input type="radio" name="tripDetails" value="round" />Roundtrip</label>
+        </div>
+        <div class="error" id="tripErr"></div>
+      </section>
+
+        
+      <section class="fields">
+        <div class="form-inline">
+        <label>Flying from</label>
+        <select name="country" required>
+          <option>Select</option>
+          <option>New York</option>
+          <option>Paris</option>
+          <option>London</option>
+          <option>Tokyo</option>
+        </select>  
+             
+      </div>
+      <div class="error" id="countryErr"></div>
+     
+      </section>
+      
+      <section class="fields">
+        <div class="form-inline">
+        <label>Flying To</label>
+        <select name="countryB" required>
+          <option>Select</option>
+          <option>New York</option>
+          <option>Paris</option>
+          <option>London</option>
+          <option>Tokyo</option>
+        </select>        
+       
+      </div>
+      <div class="error" id="countryBErr"></div>
+     
+      </section>
+    
+      <section class="fields">
+        <div class="form-inline">
+      <label for="start">Departure</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2022-07-19"
+       min="2022-07-19" max="2022-12-31" required>
+       <label for="start">Return Date</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2022-07-19"
+       min="2022-07-19" max="2022-12-31" required>
+      </div>
+      <div class="error" id="ageError"></div>
+      </section>
+      <div class="container">
+        <div class="child1">
+      <section class="fields">
+      <div class="form-inlines">
+      <section class="fields">
+        <p>Passenger 1</p>
+        <label>Full Name</label>
+        <input type="text" name="name" />
+        <div class="error" id="nameErr"></div>
+      </section>
+      <section class="fields">
+        <label>Email Address</label>
+        <input type="text" name="email" />
+        <div class="error" id="emailErr"></div>
+      </section>
+      <section class="fields">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" maxlength="10" />
+        <div class="error" id="mobileErr"></div>
+      </section>
+      <section class="fields">
+        <label>Age</label>
+        <input type="number" name="age" maxlength="3" min="0"/>
+        <div class="error" id="ageErr"></div>
+      </section>
+     
+      <section class="fields">
+       
+        <label>Gender</label>
+        <div class="form-inlines1">
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+        </div>
+        <div class="error" id="genderErr"></div>
+      </section>
+      <section class="fields">
+        <label>Address</label>
+<textarea name="address"></textarea>
+
+<div class="error" id="addressErr"></div>
+      </section> 
+    
+
+<div class="error" id="addressErr"></div>
+      </section> 
+    </div>
+    <div class="child2">
+      <section class="fields">
+        <div class="form-inlines">
+        <section class="fields">
+          <p>Passenger 2</p>
+          <label>Full Name</label>
+          <input type="text" name="name" />
+          <div class="error" id="nameErr"></div>
+        </section>
+        <section class="fields">
+          <label>Email Address</label>
+          <input type="text" name="email" />
+          <div class="error" id="emailErr"></div>
+        </section>
+        <section class="fields">
+          <label>Mobile Number</label>
+          <input type="text" name="mobile" maxlength="10" />
+          <div class="error" id="mobileErr"></div>
+        </section>
+        <section class="fields">
+          <label>Age</label>
+          <input type="number" name="age" maxlength="3" min="0"/>
+          <div class="error" id="ageErr"></div>
+        </section>
+       
+        <section class="fields">
+         
+          <label>Gender</label>
+          <div class="form-inlines1">
+            <label><input type="radio" name="gender" value="male" /> Male</label>
+            <label
+              ><input type="radio" name="gender" value="female" /> Female</label
+            >
+          </div>
+          <div class="error" id="genderErr"></div>
+        </section>
+        <section class="fields">
+          <label>Address</label>
+  <textarea name="address"></textarea>
+  
+  <div class="error" id="addressErr"></div>
+        </section> 
+      
+  
+  <div class="error" id="addressErr"></div>
+        </section> 
+      </div>
+      </div>   
+    </div>
+      <section class="fields"><input type="submit" value="Submit"></section>
+    </form>
+    </main>
+  </body>
+</html>

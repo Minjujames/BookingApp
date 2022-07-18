@@ -1,0 +1,86 @@
+html {
+    background: url("index3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  p {
+    font-style: italic;
+  
+  }
+  body {
+    font-size: 16px;
+  
+    line-height: 1.5;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+  h2 {
+    text-align: center;
+    text-decoration: none;
+  }
+  form {
+    width: 800px;
+    background: rgb(132, 186, 151);
+    padding: 15px 40px 40px;
+    border: 1px solid rgb(102, 78, 145);
+    margin: 50px auto 0;
+    border-radius: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    border: 1px solid rgb(162, 155, 155);
+    padding-left: 5px;
+    display: inline-block;
+    width: 30%;
+    border-radius: 2px;
+  }
+  .fields {
+    padding-bottom: 10px;
+  }
+  .form-inlines1 {
+    align-content: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    
+  }
+  .form-inline label,
+  .form-inline input {
+    display: inline-block;
+    width: 20%;
+    padding-right: 10px;
+  }
+  .error {
+    color: red;
+    font-size: 90%;
+  }
+  input[type="submit"] {
+    font-size: 100%;
+    font-weight: 100;
+    background: #024918;
+    margin-left: 250px;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px;
+  }
+  input[type="submit"]:hover {
+    background: #04a83a;
+  }
+  
